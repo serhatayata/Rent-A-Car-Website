@@ -1,0 +1,220 @@
+/* GENERAL CODES */
+body {background: darkslategray; font-size: 10px; width: 100%; height: auto;}
+* {box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+html {scroll-behavior:smooth;}
+* ::-webkit-scrollbar {width: 10px; background-color: #ededed;}
+* ::-webkit-scrollbar-thumb {background-color: lightseagreen;}
+/* SLIDING */
+.dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active {
+    background-color: #717171;
+  }
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  hr {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 3px solid lightseagreen;
+  }
+/* ------------------------------ */
+/* HIDDEN */
+.commentsForMobile {display:none;}
+.searchForMobile {display: none;}
+/* ------------------------------------------------------------------------------------ */
+/* NAVBAR HEADER */
+header {position: sticky; top:0; z-index: 999;color: lightseagreen; font-weight: bold;}
+nav a,.brandtitle,.popup1 {color:lightseagreen; font-weight: bold;}
+nav img {width: 35px; height: 35px;}
+nav .collapse .navbar-nav li a {font-size: 1.2rem;}
+nav .collapse .navbar-nav li .nav-link {margin-left: 2rem;}
+/* ------------------------------------------------------------------------------------- */
+/* PAGE1 */
+.mainleft, .mainright {border: 3px solid lightseagreen; margin-top: 1.5rem; padding: 1.2rem;}
+#sectionA {font-size: 1.2rem; font-weight: bold;}
+#sectionA .nameSurname {text-decoration: underline; color:lightseagreen;}
+#sectionA .comline {color: lightsteelblue; font-size: 1rem;}    
+#sectionA .main {margin-top: 2rem; text-align: center;color:lightsteelblue}
+#sectionA .date1 p {margin-top: 1rem; color: lightseagreen;}
+#sectionA button {margin-top: 2rem;}
+#sectionA .dots {margin-top: 2rem;}
+/* ------------------------------------------------------ */
+/* PAGE2 */
+#sectionB .page2 {padding:3rem; margin-top: 2rem; border-top: 2px solid lightsteelblue ; border-bottom: 2px solid lightsteelblue;}
+#sectionB .page2 .box img {width: 180px; height: 150px;}
+#sectionB .page2 .box {padding:2rem; margin:0rem 2rem; font-size: 20px; text-align: center;}
+#sectionB .page2 .box p {margin-top: 1rem;}
+#sectionB .page2 .box p a {font-weight: bold; color: lightseagreen;}
+#sectionB .page2 .modalsTitle p {color:lightseagreen;text-align:center; font-size: 28px; font-weight: bold; text-decoration: underline;}
+/* PAGE3 */
+#sectionC .page3 .row {padding: 4rem; border-bottom: 2px solid lightsteelblue;}
+#sectionC .page3 .row .carsTitle {color:lightseagreen;text-align: center; font-size: 28px;text-decoration: underline; font-weight: bold;}
+#sectionC .page3 .row .box {margin: 3rem;width: 300px; height: 300px; font-size: 16px; font-weight: bold; color:lightseagreen ;}
+#sectionC .page3 .row .box p {margin-top: 1rem;}
+#sectionC .page3 .row .box button {margin-left: 40%;}
+#sectionC .page3 .row .box .carsexp {text-align: center;}
+#sectionC .page3 .row .box img {width: 300px; height: 200px;}
+/* PAGE4 */
+#sectionD .page4 .firstLabel {margin-top: 1rem;}
+#sectionD .page4 label {font-size: 20px; color: lightseagreen;}
+#sectionD .page4 button {margin: 1rem 0rem 0.5rem 0rem;}
+#sectionD .page4 img {width: 25px; height: 25px; margin-left: 28%;}
+#sectionD .page4 .contactMail,.contactTel {margin-left:5%; font-size: 16px; font-weight: bold; color: lightseagreen;}
+#sectionD .contactTitle {text-align: center; font-size: 28px; color:lightseagreen ; margin-top: 2rem; text-decoration: underline;}
+/* ---------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+@media screen and (min-width:576px) and (max-width:768px) {
+/* HIDDEN */
+.searchForMobile {display: inline-block;}
+/* ------------------------------------------------ */
+/* PAGE1 */
+.commentsForMobile {margin-top: 2rem;}
+.mainleft, .mainright {font-size:12px}
+.mainright input,.mainright p {width: 100%; height:auto;}
+nav .collapse .navbar-nav li .nav-link {margin-left: 0rem;}
+nav a,.brandtitle,.popup1 {display: block !important;}
+#sectionA .page1 .main  {margin:0%; font-size: 12px; text-align: center; width: 100%; height: auto;}
+#sectionA .page1 .main .Sliding {margin-top: 1rem;}
+#sectionA .page1 .main .Sliding img {width: 100%; height: auto;}
+marquee.comments,p.comline {font-size: 12px !important;}
+/* PAGE2 */
+#sectionB .page2 .box {margin:0%; font-size: 20px; text-align: center;}
+#sectionB .page2 .box {width: 50%; height: auto;}
+/* PAGE3 */
+#sectionC .page3 .row {padding: 5%; border-bottom: 2px solid lightsteelblue;}
+#sectionC .page3 .row .box {margin:2.5%;width: 45%; height: auto; font-size: 16px; font-weight: bold; color:lightseagreen ;}
+#sectionC .page3 .row .box img {width: 100%; height: auto;}
+#sectionC .page3 .row .box button {margin-left: 40%;}
+#sectionC .page3 .row .carsTitle {font-size: 20px;}
+/* PAGE4 */
+#sectionD .page4 label {font-size: 18px;}
+#sectionD .page4 input {height: 35px;}
+#sectionD .page4 button {margin: 1rem 0rem 0rem 0rem;}
+#sectionD .page4 img {width: 25px; height: 25px; margin-left: 25%;}
+#sectionD .page4 .contactMail,.contactTel {font-size: 14px;}
+#sectionD .page4 .firstLabel {margin-top: 0.2rem;}
+#sectionD .contactTitle {text-align: center; font-size: 16px; color:lightseagreen ; margin-top: 2rem; text-decoration: underline;}
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+/* HIDDEN */
+.searchForMobile {display: inline-block;}
+/* ------------------------------------------------ */
+/* PAGE1 */
+.commentsForMobile {margin-top: 2rem;}
+nav .collapse .navbar-nav li .nav-link {margin-left: 0rem;}
+nav a,.brandtitle,.popup1 {display: block !important;}
+#sectionA .page1 .main  {margin:0%; font-size: 12px; text-align: center; width: 100%; height: auto;}
+.mainright input,.mainright p {width: 100%; height:auto;}
+.mainleft, .mainright {font-size:12px}
+#sectionA .page1 .main .Sliding {margin-top: 1rem;}
+#sectionA .page1 .main .Sliding img {width: 100%; height: auto;}
+marquee.comments,p.comline {font-size: 12px !important;}
+/* PAGE2 */
+#sectionB .page2 .box {margin:0%; font-size: 20px; text-align: center;}
+#sectionB .page2 .box {width: 50%; height: auto;}
+/* PAGE3 */
+#sectionC .page3 .row {padding: 5%; border-bottom: 2px solid lightsteelblue;}
+#sectionC .page3 .row .box {margin:1rem;width: 45%; height: auto; font-size: 16px; font-weight: bold; color:lightseagreen ;}
+#sectionC .page3 .row .box img {width: 100%; height: auto;}
+#sectionC .page3 .row .box button {margin-left: 40%;}
+#sectionC .page3 .row .carsTitle {font-size: 20px;}
+/* PAGE4 */
+#sectionD .page4 label {font-size: 18px;}
+#sectionD .page4 input {height: 35px;}
+#sectionD .page4 button {margin: 1rem 0rem 0rem 0rem;}
+#sectionD .page4 img {width: 25px; height: 25px; margin-left: 25%;}
+#sectionD .page4 .contactMail,.contactTel {font-size: 14px;}
+#sectionD .page4 .firstLabel {margin-top: 0.2rem;}
+#sectionD .contactTitle {text-align: center; font-size: 20px; color:lightseagreen ; margin-top: 2rem; text-decoration: underline;}
+}
+@media screen and (min-width:992px) and (max-width:1350px) 
+{
+/* HIDDEN */
+.searchForMobile {display: inline-block;}
+/* ------------------------------------------------ */
+/* PAGE1 */
+.commentsForMobile {margin-top: 2rem;}
+nav .collapse .navbar-nav li .nav-link {margin-left: 0rem;}
+nav a,.brandtitle,.popup1 {display: block !important;}
+.mainleft, .mainright {font-size:12px; }
+.mainright input,.mainright p {width: 100%; height:auto;}
+#sectionA .page1 .main  {margin:0%; font-size: 12px; text-align: center; width: 100%; height: auto;}
+#sectionA .page1 .main .Sliding {margin-top: 1rem;}
+#sectionA .page1 .main .Sliding img {width: 100%; height: auto;}
+marquee.comments,p.comline {font-size: 12px !important;}
+/* PAGE2 */
+#sectionB .page2 .box {margin:0%; font-size: 20px; text-align: center;}
+#sectionB .page2 .box {width: 50%; height: auto;}
+/* PAGE3 */
+#sectionC .page3 .row {padding: 5%; border-bottom: 2px solid lightsteelblue;}
+#sectionC .page3 .row .box {margin:1rem;width: 45%; height: auto; font-size: 16px; font-weight: bold; color:lightseagreen ;}
+#sectionC .page3 .row .box img {width: 100%; height: auto;}
+#sectionC .page3 .row .box button {margin-left: 40%;}
+#sectionC .page3 .row .carsTitle {font-size: 20px;}
+/* PAGE4 */
+#sectionD .page4 label {font-size: 18px;}
+#sectionD .page4 input {height: 35px;}
+#sectionD .page4 button {margin: 1rem 0rem 0rem 0rem;}
+#sectionD .page4 img {width: 25px; height: 25px; margin-left: 25%;}
+#sectionD .page4 .contactMail,.contactTel {font-size: 14px;}
+#sectionD .page4 .firstLabel {margin-top: 0.2rem;}
+#sectionD .contactTitle {text-align: center; font-size: 20px; color:lightseagreen ; margin-top: 2rem; text-decoration: underline;}
+}
+/* MOBILE SCREEN */
+@media screen and (max-width:576px)
+{
+/* HIDDEN */
+.searchForMobile {display: inline-block;}
+.commentsForMobile {display:inline-block;}
+/* ------------------------------------------------ */
+/* PAGE1 */
+.commentsForMobile {margin-top: 2rem;}
+nav .navbar-brand {font-size:15px}
+nav .collapse .navbar-nav li .nav-link {margin-left: 0rem; font-size: 15px;}
+nav a,.brandtitle,.popup1 {display: block !important;}
+/* PAGE1 */
+#sectionA .page1 .main  {margin:0%; font-size: 12px; text-align: center; width: 100%; height: auto;}
+#sectionA .page1 .main .Sliding {margin-top: 1rem;}
+#sectionA .page1 .main .Sliding img {width: 100%; height: auto;}
+marquee.comments,p.comline {font-size: 12px !important;}
+
+/* PAGE2 */
+#sectionB .page2 .box {margin:0%; font-size: 20px; text-align: center; width: 50%; height: auto;}
+#sectionB .page2 .box img {width: 100px; height: 100px;}
+#sectionB .page2 .modalsTitle p {font-size: 18px;}
+
+/* PAGE3 */
+#sectionC .page3 .row {padding: 5%; border-bottom: 2px solid lightsteelblue;}
+#sectionC .page3 .row .box {margin:4% 2.5% ; width: 45%; height: auto; font-size: 8px; font-weight: bold; color:lightseagreen ;}
+#sectionC .page3 .row .box img {width: 100%; height: auto;}
+#sectionC .page3 .row .box button {margin-left: 30%; width: 55px; height: 28px; font-size: 10px;}
+#sectionC .page3 .row .carsTitle {font-size: 16px;}
+/* PAGE4 */
+#sectionD .page4 label {font-size: 15px;}
+#sectionD .page4 input {height: 30px;}
+#sectionD .page4 button {margin: 1rem 0rem 0rem 0rem;}
+#sectionD .page4 img {width: 20px; height: 20px; margin-left: 22%;}
+#sectionD .page4 .contactMail,.contactTel {font-size: 12px;}
+#sectionD .page4 .firstLabel {margin-top: 0.2rem;}
+#sectionD .contactTitle {text-align: center; font-size: 20px; color:lightseagreen ; margin-top: 2rem; text-decoration: underline;}
+}
